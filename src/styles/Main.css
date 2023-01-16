@@ -1,0 +1,17 @@
+.category-section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.category-section-title{
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+}
+
+.posts-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
