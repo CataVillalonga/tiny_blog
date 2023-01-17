@@ -14,12 +14,12 @@ const Main =({data}:IBlogDataProps) => {
 
   return (
     <main>
-      <section className="category-section" onClick={categoryHandler}>
+      <section id="Crime" className="category-section" onClick={categoryHandler}>
         <div className="intro-section">
           <h1 className="intro-section-title">Crime</h1>
           {categoryArrow}
         </div>
-        <section key='crime-section' className="posts-section">
+        <section className="posts-section">
         {data.map(post =>{        
           const {tags} = post
           if(tags.includes('crime')) {
@@ -28,12 +28,12 @@ const Main =({data}:IBlogDataProps) => {
         })}
         </section>
       </section>
-      <section className="category-section">
+      <section id="Love"className="category-section">
         <div className="intro-section">
           <h1 className="intro-section-title">Love</h1>
           {categoryArrow}
         </div>
-        <section key='love-section' className="posts-section">
+        <section className="posts-section">
         {data.map(post =>{        
           const {tags} = post
           if(tags.includes('love')) {
@@ -42,12 +42,12 @@ const Main =({data}:IBlogDataProps) => {
         })}
         </section>
       </section>
-      <section className="category-section">
+      <section id="Mystery" className="category-section">
         <div className="intro-section">
           <h1 className="intro-section-title">Mystery</h1>
           {categoryArrow}
         </div>
-        <section key='mystery' className="posts-section">
+        <section className="posts-section">
         {data.map(post =>{        
           const {tags} = post
           if(tags.includes('mystery')) {
@@ -56,12 +56,12 @@ const Main =({data}:IBlogDataProps) => {
         })}
         </section>
       </section>
-      <section className="category-section">
+      <section id="Classic" className="category-section">
         <div className="intro-section">
           <h1 className="intro-section-title">Classic</h1>
           {categoryArrow}
         </div>
-        <section key='classic' className="posts-section">
+        <section className="posts-section">
         {data.map(post =>{        
           const {tags} = post
           if(tags.includes('classic')) {
@@ -70,12 +70,12 @@ const Main =({data}:IBlogDataProps) => {
         })}
         </section>
       </section>
-      <section className="category-section">
+      <section id="Fiction" className="category-section">
         <div className="intro-section">
           <h1 className="intro-section-title">Fiction</h1>
           {categoryArrow}
         </div>
-        <section key='fiction' className="posts-section">
+        <section className="posts-section">
         {data.map(post =>{        
           const {tags} = post
           if(tags.includes('fiction')) {

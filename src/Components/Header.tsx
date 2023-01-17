@@ -7,8 +7,9 @@ const Header = () => {
     <header className="header-section">
       <li className="header-section-links">
         {categories.map( (category, i) => {
+          console.log(`#${category}`)
           return (
-            <ul key={i}>{category}</ul>
+            <ul key={i}><a href={`#${category}`}>{category}</a></ul>
           )
         })}
       </li>
