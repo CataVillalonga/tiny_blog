@@ -1,14 +1,28 @@
 .post-details {
-    border: 1px solid black;
+    border: 1px solid #b3b2b2;
     padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    min-height: 20rem;
 }
 
 .post-details-title {
     font-size: 1.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.post-details-description {
+    margin-bottom: 1rem;
+    color: gray;
 }
 
 .post-details-tags {
     list-style: none;
     display: flex;
+    justify-content: space-evenly;
+}
+
+.post-details-tags a{
+    color: rgb(169 143 119);
 }

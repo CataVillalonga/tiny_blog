@@ -3,7 +3,7 @@ import '../styles/Blogpost.css';
 
 
 const Blogpost =({post}:IPostProps) => {
-  console.log(post)
+  
   return (
     <article key={post.id} className='post-details'>
       <h1 className='post-details-title'>{post.title}</h1>

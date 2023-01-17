@@ -15,7 +15,8 @@
 }
 
 .header-section-links :hover {
-    color: black
+    color: black;
+    cursor: pointer;
 }
 
 .header-section-title {
